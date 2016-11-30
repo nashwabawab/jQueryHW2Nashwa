@@ -22,7 +22,7 @@
 
 <script>
 #sky {
-  background: #2196F3; 
+  background: #2196F3;
   position: absolute !important;
   top: 0;
   right: 0;
@@ -44,8 +44,13 @@
 
 <script>
 $(document).ready(function() {
-  $('#sky').jQlouds();
+  $('#sky').jQlouds({
+    minClouds: 3, // minimum amount of clouds
+ maxClouds: 5, // maximum amount of clouds
+ wind: true
+  });
 });
+
 </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
